@@ -1,0 +1,15 @@
+services:
+  php:
+    image: php:7.4-apache
+    container_name: php-7-4-apache
+    command: >
+      bash -c "a2enmod rewrite
+      && apache2-foreground"
+      curl -sS https://getcomposer.org/installer \
+      | php -- --install-dir=/usr/local/bin --filename=composer \
+      sh -c "composer install"
+    ports: 
+      - "80:80"
+    volumes:
+      - .:/var/www:/var/www
+

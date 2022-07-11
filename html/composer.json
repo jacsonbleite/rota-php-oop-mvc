@@ -1,0 +1,17 @@
+{
+    "name": "jacson/php-rotas-simples",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app"
+        }
+    },
+    "authors": [
+        {
+            "name": "jacsonbleite",
+            "email": "jacsonbleite@gmail.com"
+        }
+    ],
+    "require": {
+        "league/plates": "^3.4"
+    }
+}
